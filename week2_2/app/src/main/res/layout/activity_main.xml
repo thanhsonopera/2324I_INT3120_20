@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:text="Welcome Homer"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Text1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:hint="Please Give Generously" />
+
+        <RadioButton
+            android:id="@+id/PayPal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PayPal" />
+
+        <RadioButton
+            android:id="@+id/Direct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Direct" />
+    </RadioGroup>
+
+    <NumberPicker
+        android:id="@+id/NumberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Text1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NumberPicker" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/progressBar"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="Amount"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/progressBar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/textView2"
+        android:ems="10"
+        android:hint="Fill"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="DONATE"
+        app:backgroundTint="@null" />
+
+    <TextView
+        android:id="@+id/textDonate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextText"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/button"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/emailIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textDonate"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

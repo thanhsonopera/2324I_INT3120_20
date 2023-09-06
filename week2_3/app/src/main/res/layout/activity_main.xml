@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:shrinkColumns="0"
+    android:stretchColumns="0"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_column="0"
+            android:layout_span="5"
+            android:gravity="center_vertical"
+            android:text="Welcome Homer"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_span="3">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Please Give Generously" />
+
+            <RadioButton
+                android:id="@+id/Palpay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Palpay" />
+
+            <RadioButton
+                android:id="@+id/Direct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Direct" />
+
+        </RadioGroup>
+
+        <NumberPicker
+            android:id="@+id/NumberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_marginTop="15dp"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="5" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_span="1"
+            android:gravity="center"
+            android:hint="Amount" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_span="1"
+            android:ems="10"
+            android:hint="Fill"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:layout_column="0"
+            android:layout_span="1"
+            android:text="DONATE" />
+
+        <TextView
+            android:id="@+id/textDonate"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:layout_span="4" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_column="4"
+            android:layout_gravity="left"
+            android:layout_span="1"
+            app:srcCompat="@drawable/email" />
+    </TableRow>
+
+</TableLayout>

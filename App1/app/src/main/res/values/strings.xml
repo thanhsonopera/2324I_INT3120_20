@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">App1</string>
+    <string name="title_activity_linear_layouts">LinearLayouts</string>
+    <string name="title_activity_relative_layouts">RelativeLayouts</string>
+    <string name="title_activity_absolute_layouts">AbsoluteLayouts</string>
+    <string name="title_activity_table_layouts">TableLayouts</string>
+    <string name="title_activity_constraint_layout">ConstraintLayout</string>-->
+</resources>
