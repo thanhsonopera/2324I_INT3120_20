@@ -1,0 +1,5 @@
+<resources>
+    <style name="ContextMenuTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/custom_title_color</item>
+    </style>
+</resources>
