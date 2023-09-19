@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item2"
+        android:icon="@drawable/ic_people_black_24"
+        android:title="Item2"
+         />
+
+    <item
+        android:id="@+id/item3"
+        android:icon="@drawable/ic_settings_black_24"
+        android:orderInCategory="100"
+        android:title="Item3"
+        />
+    <item
+        android:id="@+id/item4"
+        android:icon="@drawable/ic_photo_camera_black_24"
+        android:orderInCategory="100"
+        android:title="Item4"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/item6"
+        android:orderInCategory="100"
+        android:title="Item6"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/item6.1"
+                android:title="Item 6.1" />
+            <item
+                android:id="@+id/item6.2"
+                android:title="Item 6.2" />
+        </menu>
+    </item>
+</menu>
