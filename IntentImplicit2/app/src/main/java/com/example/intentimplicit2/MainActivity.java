@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity {
 //
 //        startActivity(myActivity2);
         //chuyển giao diện cuộc gọi người dùng thứ 8 trong danh sách nếu không có hiển thị không tồn tại
-//        String myData = "content://contacts/people/8";
+//        String myData = "content://contacts/people/4";
 //
 //        Intent myActivity2 = new Intent(Intent.ACTION_VIEW,
 //                Uri.parse(myData));
 //
 //        startActivity(myActivity2);
         //->
-//        String myData = "content://contacts/people/1";
+
 //        Uri contactUri = ContentUris.withAppendedId(ContactsContract.Contacts.CONTENT_URI, 1);
 //        Intent myActivity2 = new Intent(Intent.ACTION_EDIT, contactUri);
 //        PackageManager packageManager = getPackageManager();
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 //        } else {
 //            Log.d("haha", "onCreate: ");
 //        }
-//
+
 //        startActivity(myActivity2);
 
 
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 //                Uri.parse(geoCode));
 //
 //        startActivity(intent);
-
+//
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.setPackage("com.google.android.apps.youtube.music");
         startActivity(intent);
