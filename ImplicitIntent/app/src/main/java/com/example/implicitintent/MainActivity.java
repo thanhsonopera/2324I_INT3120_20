@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View view) {
 
 //                Intent intent = new Intent( Intent.ACTION_SENDTO,
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 //                String packageName = "com.google.android.youtube";
 //                PackageManager packageManager = getPackageManager();
                 intent.setPackage("com.google.android.youtube");
+                //mở youtube
 //                try {
 //                    packageManager.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
 //                    Log.d("zdz", ":gud ");
