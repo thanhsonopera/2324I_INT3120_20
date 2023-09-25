@@ -36,6 +36,4 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
     public void onNothingSelected(AdapterView<?> parent) {
         selection.setText("");
     }
-
-
 }

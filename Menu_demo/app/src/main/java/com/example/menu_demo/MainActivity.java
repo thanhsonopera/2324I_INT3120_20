@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(this::onNavigationItemSelected);
-        navigationView.setCheckedItem(R.id.nav_home);
+        navigationView.setCheckedItem(R.id.menu);
 //        menu = navigationView.getMenu();
 //        menu.findItem(R.id.nav_logout).setVisible(false);
 //        menu.findItem(R.id.nav_profile).setVisible(false);
@@ -60,13 +60,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+            
 
-        if (menuItem.getItemId() == R.id.nav_home) {
-        } else if (menuItem.getItemId() == R.id.nav_bus) {
+       if (menuItem.getItemId() == R.id.slide_1) {
             Intent intent = new Intent(MainActivity.this, MainActivity2.class);
             startActivity(intent);
-        } else if (menuItem.getItemId() == R.id.nav_share) {
-            Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+        } else if (menuItem.getItemId() == R.id.slide_2) {
+           Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+           startActivity(intent);
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);
