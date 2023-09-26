@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:text="1"/>
+            android:text="@string/setting_1"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,12 +39,12 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="50dp"
-                android:text="AAAA"/>
+                android:text="@string/setting_2"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_margin="10dp"
-                android:text="AAAA"/>
+                android:text="@string/setting_3"/>
         </RadioGroup>
     </LinearLayout>
     <LinearLayout
@@ -57,7 +57,47 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="40dp"
-            android:text="1"/>
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/setting_4"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/setting_5"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/setting_6"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -71,41 +111,15 @@
         android:layout_margin="10dp"
         android:gravity="center">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="40dp"
-            android:text="1"/>
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/setting_7"/>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="1"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="10dp"
-        android:gravity="center">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="1"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="1"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="10dp"
-        android:gravity="center">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="1"/>
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="40dp"
             android:text="1"/>
     </LinearLayout>
@@ -120,7 +134,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:gravity="left|center_vertical"
-            android:text="111"/>
+            android:text="@string/setting_9"/>
         <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/spinner_language"
             android:layout_width="0dp"
@@ -135,8 +149,8 @@
         android:gravity="right">
         <Button
             android:id="@+id/Save"
-            android:layout_width="70dp"
+            android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:text="Save"/>
+            android:text="@string/setting_8"/>
     </LinearLayout>
 </LinearLayout>
