@@ -16,4 +16,9 @@
     <string name="setting_7">Số điện thoại</string>
     <string name="setting_8">Cập nhật</string>
     <string name="setting_9">Thay đổi ngôn ngữ</string>
+    <string name="about_title">About</string>
+    <string name="about_1">Form data</string>
+    <string name="about_2">Upload</string>
+    <string name="about_3">Edit change</string>
+    <string name="about_4">Update</string>
 </resources>

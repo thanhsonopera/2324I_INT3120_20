@@ -16,4 +16,9 @@
     <string name="setting_7">Số điện thoại</string>
     <string name="setting_8">Cập nhật</string>
     <string name="setting_9">Thay đổi ngôn ngữ</string>
+    <string name="about_title">Giới thiệu</string>
+    <string name="about_1">Biểu mẫu</string>
+    <string name="about_2">Tải lên</string>
+    <string name="about_3">Chỉnh sửa</string>
+    <string name="about_4">Cập nhật</string>
 </resources>

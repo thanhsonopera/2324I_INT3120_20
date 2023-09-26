@@ -34,7 +34,9 @@ public class Home extends AppCompatActivity {
 
                 }
                 else if (item.getItemId() == R.id.about){
-
+                    Intent intent = new Intent(getApplicationContext(), About.class);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 }
                 else if (item.getItemId() == R.id.upload) {
 
