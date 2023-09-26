@@ -38,43 +38,57 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/login_1" />
 
-                android:hint="Tên đăng nhập/ Email" />
-
-            <EditText
+            <AutoCompleteTextView
                 android:id="@+id/account"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:layout_margin="10dp" />
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:completionThreshold="1"
+                android:hint="Your account"
+                android:textSize="14dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:hint="Mật khẩu" />
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/login_2" />
 
             <EditText
-                android:id="@+id/Password"
+                android:id="@+id/password"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp" />
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Your password"
+                android:textSize="14dp"/>
 
             <TextView
                 android:id="@+id/forgotPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Quên mật khẩu?"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/login_3"
                 android:textColor="@color/forgot" />
 
             <Button
                 android:id="@+id/submit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
                 android:layout_margin="10dp"
-                android:text="Đăng nhập"
+                android:background="@drawable/button_1"
+                app:backgroundTint="@null"
+                android:text="@string/login_4"
                 android:textSize="24dp" />
 
             <LinearLayout
@@ -87,39 +101,46 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chưa có tài khoản?" />
+                    android:text="@string/login_5" />
 
                 <TextView
                     android:id="@+id/create"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:text="Đăng ký?"
+                    android:text="@string/login_6"
                     android:textColor="@color/forgot" />
             </LinearLayout>
 
 
             <Button
+                android:id="@+id/login_facebook"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="@color/white"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+
+                android:background="@drawable/button_facebook"
+                app:backgroundTint="@null"
                 android:drawableLeft="@drawable/facebook"
-                android:drawablePadding="8dp"
                 android:gravity="center_vertical|start"
                 android:text="Sign in with Facebook"
-                android:textColor="@color/black" />
+
+                android:textColor="@color/white" />
 
 
             <Button
+                android:id="@+id/login_google"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="38dp"
                 android:layout_margin="10dp"
-                android:backgroundTint="@color/white"
+                android:background="@drawable/button_google"
+                app:backgroundTint="@null"
                 android:drawableLeft="@drawable/google"
                 android:gravity="center_vertical|start"
                 android:text="Sign in with Google"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
