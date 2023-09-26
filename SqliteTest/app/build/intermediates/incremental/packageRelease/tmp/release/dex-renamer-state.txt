@@ -1,4 +1,0 @@
-#Tue Sep 26 22:37:55 ICT 2023
-base.0=C\:\\Users\\thanh\\AndroidStudioProjects\\CursorAdapter\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
