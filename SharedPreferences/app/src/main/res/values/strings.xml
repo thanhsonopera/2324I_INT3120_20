@@ -6,4 +6,13 @@
     <string name="login_4">Đăng nhập</string>
     <string name="login_5">Chưa có tài khoản?</string>
     <string name="login_6">Đăng ký?</string>
+    <string name="setting_title">Cài đặt</string>
+    <string name="setting_1">Tải ảnh đại diện</string>
+    <string name="setting_2">Tổ chức</string>
+    <string name="setting_3">Cá nhân</string>
+    <string name="setting_4">Tên tài khoản</string>
+    <string name="setting_5">Mật khẩu mới</string>
+    <string name="setting_6">Thư điện tử</string>
+    <string name="setting_7">Số điện thoại</string>
+    <string name="setting_8">Cập nhật</string>
 </resources>

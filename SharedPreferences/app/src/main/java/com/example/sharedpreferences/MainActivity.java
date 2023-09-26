@@ -2,9 +2,12 @@ package com.example.sharedpreferences;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,6 +27,7 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,7 +41,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Intent mainIntent = getIntent();
+        String statusLanguage = mainIntent.getStringExtra("ChangeLanguage");
+        if (statusLanguage == null || statusLanguage.equals("L1")) {
+            applyLanguage();
+            mainIntent.putExtra("ChangeLanguage", "L2");
+            recreate();
+        }
         submit = findViewById(R.id.submit);
         Account = findViewById(R.id.account);
         Password = findViewById(R.id.password);
@@ -121,5 +131,17 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
+    private void applyLanguage() {
+        SharedPreferences sharedPreferences = getSharedPreferences("Language", Context.MODE_PRIVATE);
+        String currentLanguage = sharedPreferences.getString("Language", "");
+        setLocal(MainActivity.this, currentLanguage);
+    }
+    private void setLocal(Activity activity, String selectedLanguage) {
+        Locale locale = new Locale(selectedLanguage);
+        Locale.setDefault(locale);
+        Resources resource = activity.getResources();
+        Configuration configuration = activity.getResources().getConfiguration();
+        configuration.setLocale(locale);
+        resource.updateConfiguration(configuration, resource.getDisplayMetrics());
+    }
 }

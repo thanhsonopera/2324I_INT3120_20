@@ -42,10 +42,12 @@ public class Home extends AppCompatActivity {
                 else if (item.getItemId() == R.id.setting) {
                     Intent intent = new Intent(getApplicationContext(), Setting.class);
                     startActivity(intent);
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                 }
                 return true;
 
             }
         });
     }
+
 }
