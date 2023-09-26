@@ -47,6 +47,7 @@ public class Setting extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 selectedLanguage = languageList.get(position);
+                Log.d("10", "onItemSelected: " + selectedLanguage);
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
@@ -55,7 +56,8 @@ public class Setting extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (defaultLanguage != selectedLanguage) {
+                if (!defaultLanguage.equals(selectedLanguage)) {
+                    Log.d("11", "onClick: " + defaultLanguage);
                     putLanguage(selectedLanguage);
                     restartApp();
                 }

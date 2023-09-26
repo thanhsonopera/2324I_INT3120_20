@@ -131,6 +131,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+    @Override
+    public void recreate(){
+        super.recreate();
+    }
     private void applyLanguage() {
         SharedPreferences sharedPreferences = getSharedPreferences("Language", Context.MODE_PRIVATE);
         String currentLanguage = sharedPreferences.getString("Language", "");
