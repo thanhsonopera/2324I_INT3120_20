@@ -3,6 +3,7 @@ package com.example.foregroundservice;
 import android.app.Application;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.graphics.Color;
 import android.os.Build;
 import android.util.Log;
 
@@ -22,6 +23,8 @@ public class App extends Application {
                     "EXAMPLE SERVICE CHANNEL",
                     NotificationManager.IMPORTANCE_DEFAULT
             );
+            serviceChanel.enableLights(true);
+            serviceChanel.setLightColor(Color.RED);
             NotificationManager manager = getSystemService(NotificationManager.class);
             manager.createNotificationChannel(serviceChanel);
         }

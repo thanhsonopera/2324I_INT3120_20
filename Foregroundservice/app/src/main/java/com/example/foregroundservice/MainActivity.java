@@ -10,6 +10,8 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.Manifest;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -30,7 +32,19 @@ public class MainActivity extends AppCompatActivity {
         String input = editText.getText().toString();
         Intent serviceIntent = new Intent(this, ExampleService.class);
         serviceIntent.putExtra("inputExtra", input);
-        startService(serviceIntent);
+//        startService(serviceIntent);
+        ContextCompat.startForegroundService(this, serviceIntent);
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Log.d("TAG", "run: ");
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    ContextCompat.startForegroundService(getApplicationContext(), serviceIntent);
+                } else {
+                    startService(serviceIntent);
+                }
+            }
+        }, 10000);
     }
 
     public void stopService(View v) {

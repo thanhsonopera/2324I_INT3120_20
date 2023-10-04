@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_NOTIFICATION_LED" />
 
     <application
         android:name=".App"
@@ -25,6 +27,7 @@
             </intent-filter>
         </activity>
         <service android:name=".ExampleService"/>
+        <meta-data android:name="android.app.lib_name" android:value="" />
     </application>
 
 </manifest>
