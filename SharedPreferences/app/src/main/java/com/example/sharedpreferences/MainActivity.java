@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         Intent mainIntent = this.getIntent();
         String statusLanguage = mainIntent.getStringExtra("ChangeLanguage");
         if (statusLanguage == null || statusLanguage.equals("L1")) {
-
             applyLanguage();
             mainIntent.putExtra("ChangeLanguage", "L2");
             recreate();
